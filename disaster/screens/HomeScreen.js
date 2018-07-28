@@ -68,20 +68,19 @@ export default class HomeScreen extends React.Component {
     if (__DEV__) {
       const learnMoreButton = (
         <Text onPress={this._handleLearnMorePress} style={styles.helpLinkText}>
-          Learn more
+          planing for a disaster
         </Text>
       );
 
       return (
         <Text style={styles.developmentModeText}>
-          Development mode is enabled, your app will be slower but you can use useful development
-          tools. {learnMoreButton}
+         Are you {learnMoreButton}
         </Text>
       );
     } else {
       return (
         <Text style={styles.developmentModeText}>
-          You are not in development mode, your app will run at full speed.
+          DEV_MODE!
         </Text>
       );
     }
@@ -101,7 +100,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#7F7D7A',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -142,7 +141,7 @@ const styles = StyleSheet.create({
   },
   getStartedText: {
     fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    color: 'rgba(255,255, 255, 1)',
     lineHeight: 24,
     textAlign: 'center',
   },
